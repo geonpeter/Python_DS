@@ -18,3 +18,10 @@ class HashTable:
     def __delitem__(self,k):
         h = self.get_hash(k)
         self.arr[h]=None
+        
+if __name__=="__main__":
+    t = HashTable()
+    t['first_name']='Geon'
+    t['last_name']= 'Peter'
+    
+    print(t['first_name'])
